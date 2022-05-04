@@ -67,7 +67,7 @@ const IcoMoon = ({
     initialStyle.flexWrap = "wrap";
   }
 
-  const comptuedStyle = {
+  const computedStyle = {
     ...(removeInlineStyle ? {} : initialStyle),
     ...(size ? { width: size, height: size } : {}),
     ...(props.style || {}),
@@ -95,7 +95,7 @@ const IcoMoon = ({
 
   return createElement(
     SvgComponent || "svg",
-    { ...props, viewBox, style: comptuedStyle },
+    { ...props, viewBox, style: computedStyle },
     children
   );
 };
